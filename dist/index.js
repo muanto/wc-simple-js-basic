@@ -1,9 +1,8 @@
 class SimpleComponent extends HTMLElement {
   constructor() {
     super();
-    this.innerHTML =
-    /*html*/
-    `
+    const div = document.createElement("div");
+    div.innerHTML = `
     <style>
       div { 
         color: red;
@@ -13,6 +12,7 @@ class SimpleComponent extends HTMLElement {
     </style>
     <div>I am a simple component</button>
   `;
+    this.appendChild(div);
   }
 
 }
