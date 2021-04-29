@@ -4,7 +4,7 @@
 class SimpleComponent extends HTMLElement {
   constructor() {
     super();
-    this.innerHTML = /*html*/`
+    this.innerHTML = `
     <style>
       div { 
         color: red;
