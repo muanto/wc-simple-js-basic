@@ -4,7 +4,10 @@
 class SimpleComponent extends HTMLElement {
   constructor() {
     super();
-    this.innerHTML = /*html*/`
+  
+  }
+  connectedCallback() {
+     this.innerHTML = /*html*/`
     <style>
       div { 
         color: red;
@@ -15,7 +18,6 @@ class SimpleComponent extends HTMLElement {
     <div>I am a simple component</button>
   `;
   }
- 
 }
 
 /* Custom elements */
